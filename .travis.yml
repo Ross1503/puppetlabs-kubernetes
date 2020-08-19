@@ -3,6 +3,9 @@ os: linux
 dist: xenial
 language: ruby
 cache: bundler
+arch:
+  - amd64
+  - arm64
 before_install:
   - bundle -v
   - rm -f Gemfile.lock
