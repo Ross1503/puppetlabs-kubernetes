@@ -59,7 +59,7 @@ class kubernetes::repos (
 
         yumrepo { 'kubernetes':
           descr    => 'Kubernetes',
-          baseurl  => pick($kubernetes_yum_baseurl,'https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64'),
+          baseurl  => pick($kubernetes_yum_baseurl,'https://packages.cloud.google.com/yum/repos/kubernetes-el7-aarch64'),
           gpgkey   => pick($kubernetes_yum_gpgkey,'https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg'),
           gpgcheck => true,
         }
